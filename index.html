@@ -284,6 +284,7 @@
   }
   .tile--w2{grid-column:span 2}
   .tile--h2{grid-row:span 2}
+  .tile--span3{grid-column:span 3}
   .tile__img{
     position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;
     transition:transform .6s ease, filter .6s ease;
@@ -303,8 +304,16 @@
       radial-gradient(ellipse at 30% 30%, rgba(58,58,205,.18), transparent 65%);
   }
   @media (max-width:760px){
-    .tile--w2{grid-column:span 1}
+    .masonry{grid-template-columns:repeat(2,1fr);grid-auto-rows:200px}
+    .tile--w2{grid-column:span 2}
     .tile--h2{grid-row:span 1}
+    .tile--w2.tile--h2{grid-column:span 2;grid-row:span 1}
+    .tile--span3{grid-column:span 2 !important}
+  }
+  @media (max-width:500px){
+    .masonry{grid-template-columns:1fr;grid-auto-rows:230px}
+    .tile--w2{grid-column:span 1}
+    .tile--span3{grid-column:span 1 !important}
   }
 
   /* ===== À propos ===== */
@@ -696,7 +705,7 @@
     </div>
 
     <!-- Stage 3 — grande tuile paysage -->
-    <div class="tile tile--h2 tile--has-img" style="grid-column:span 3">
+    <div class="tile tile--h2 tile--span3 tile--has-img">
       <img class="tile__img" src="assets/stage3-ambiance.jpg" alt="Stage 3 — banc de puissance" loading="lazy">
       <div class="tile__tag">/ ÉCLAIRAGE</div>
       <div class="tile__meta"><span class="t">2008</span><span>2025</span></div>
