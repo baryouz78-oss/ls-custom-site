@@ -1,0 +1,35 @@
+:root{--bg:#07071a;--bg-2:#0c0c24;--accent:#6060ee;--ink:#fff;--ink-2:#b0b0d0;--max:760px}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.7;font-size:17px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+header{background:var(--bg-2);border-bottom:1px solid rgba(96,96,238,.2);padding:18px 24px;display:flex;align-items:center;justify-content:space-between}
+header .logo{font-family:'Anton',sans-serif;font-size:1.4rem;letter-spacing:.08em;color:var(--ink);text-decoration:none}
+header nav a{color:var(--ink-2);font-size:.9rem;margin-left:20px}
+header nav a:hover{color:var(--accent);text-decoration:none}
+.breadcrumb{max-width:var(--max);margin:24px auto 0;padding:0 24px;font-size:.82rem;color:var(--ink-2)}
+.breadcrumb a{color:var(--ink-2)}
+article{max-width:var(--max);margin:32px auto 80px;padding:0 24px}
+.article-meta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:28px;font-size:.82rem;color:var(--ink-2)}
+.tag{background:rgba(96,96,238,.15);color:var(--accent);padding:3px 10px;border-radius:20px;font-size:.78rem}
+h1{font-family:'Anton',sans-serif;font-size:2rem;line-height:1.2;margin-bottom:16px;color:var(--ink)}
+h2{font-family:'Anton',sans-serif;font-size:1.35rem;margin:36px 0 14px;color:var(--ink)}
+h3{font-size:1.05rem;font-weight:600;margin:24px 0 10px;color:var(--ink)}
+p{margin-bottom:16px;color:var(--ink-2)}
+strong{color:var(--ink)}
+ul,ol{margin:0 0 16px 22px;color:var(--ink-2)}
+li{margin-bottom:6px}
+.intro{font-size:1.1rem;color:var(--ink);border-left:3px solid var(--accent);padding-left:16px;margin-bottom:28px}
+.cta-box{background:rgba(96,96,238,.12);border:1px solid rgba(96,96,238,.3);border-radius:12px;padding:28px;margin:40px 0;text-align:center}
+.cta-box h3{margin-top:0;color:var(--ink);font-size:1.15rem}
+.cta-box p{margin-bottom:20px}
+.btn-wa{display:inline-flex;align-items:center;gap:10px;background:#25d366;color:#fff;font-weight:700;padding:14px 28px;border-radius:8px;font-size:1rem;text-decoration:none;transition:.2s}
+.btn-wa:hover{background:#1ebe5d;text-decoration:none;color:#fff}
+.table-prix{width:100%;border-collapse:collapse;margin:20px 0}
+.table-prix th{background:rgba(96,96,238,.2);color:var(--ink);text-align:left;padding:10px 14px;font-size:.9rem}
+.table-prix td{padding:10px 14px;border-bottom:1px solid rgba(255,255,255,.07);font-size:.9rem;color:var(--ink-2)}
+.table-prix tr:last-child td{border-bottom:none}
+footer{background:var(--bg-2);border-top:1px solid rgba(96,96,238,.15);padding:32px 24px;text-align:center;font-size:.85rem;color:var(--ink-2)}
+footer a{color:var(--ink-2)}
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700&display=swap');
+@media(max-width:600px){h1{font-size:1.5rem}article{margin-top:20px}}
